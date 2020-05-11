@@ -1,0 +1,5 @@
+D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.deps.json
+D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csprojAssemblyReference.cache
+D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfoInputs.cache
+D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfo.cs

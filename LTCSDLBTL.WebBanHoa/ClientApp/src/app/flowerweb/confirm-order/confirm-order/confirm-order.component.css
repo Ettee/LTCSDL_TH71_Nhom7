@@ -1,0 +1,62 @@
+.title{
+    font-weight: 300;
+}
+.buyer-info{
+    margin: 50px 0;
+    
+}
+.buyer-info form{
+    width: 70%;
+    margin: 20px 0;
+    
+}
+.img-name-product{
+    display: flex;
+    align-items: center;
+}
+.form-group{
+    width: 40%;
+}
+.price-section{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+.price-section >div{
+    margin: 0 10px;
+}
+.flower-price{
+    font-size: 25px;
+    font-weight: 300;
+}
+.remove-product{
+    background-color:#f69e8d ;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.remove-product:hover{
+    color: white;
+}
+.giaoNhanhChoice label{
+    display: inline;
+    margin-left:10px;
+}
+.giaoNhanhChoice{
+    margin: 25px 0;
+}
+.btn-order button{
+    background-color: #2f2b6f;
+    outline: none;
+    width: 135px;
+    height: 45px;
+    font-weight: 300;
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+}

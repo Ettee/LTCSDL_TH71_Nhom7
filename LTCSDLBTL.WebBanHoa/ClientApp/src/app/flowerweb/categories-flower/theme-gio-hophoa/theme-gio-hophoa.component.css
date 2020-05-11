@@ -1,0 +1,20 @@
+.container{
+    padding: 50px 0;
+}
+.flower-block{
+    margin: 50px 0;
+}
+.title{
+    font-size: 38px;
+    font-weight: 300;
+}
+.flower-box .img-product img{
+    width: 100%;
+}
+.flower-box a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.flower-name,.flower-price{
+    color: black;
+}
