@@ -3,3 +3,37 @@ D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\bin\Debug\netcoreap
 D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csprojAssemblyReference.cache
 D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfoInputs.cache
 D:\Study\Lập trình CSDL\BaiTapLon\LTCSDLBTL\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.deps.json
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.runtimeconfig.json
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.dll
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.pdb
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csproj.CopyComplete
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
+C:\Users\Admin\Desktop\WebFlowerBox-master\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.genruntimeconfig.cache
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.deps.json
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.runtimeconfig.json
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.dll
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.pdb
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csproj.CopyComplete
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
+C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.genruntimeconfig.cache
