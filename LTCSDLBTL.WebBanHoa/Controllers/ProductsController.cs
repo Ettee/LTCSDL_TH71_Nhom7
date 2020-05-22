@@ -19,7 +19,7 @@ namespace LTCSDLBTL.WebBanHoa.Controllers
         {
             _svc = new ProductSvc();
         }
-        [HttpPost("get-all")]
+        [HttpPost("get-all-product")]
         public IActionResult getAllProduct()
         {
             var res = new SingleRsp();
@@ -40,10 +40,27 @@ namespace LTCSDLBTL.WebBanHoa.Controllers
             var res = _svc.CreateProduct(req);
             return Ok(res);
         }
+
+        //hàm update này chỉ hoạt động khi nhập vào đầy đủ thông tin cho product đó ( bắt buộc phải đủ 4 thứ :productID,cateID,Price,ProductImg)
         [HttpPost("update-product")]
         public IActionResult UpdateProduct([FromBody]ProductReq req)
         {
             var res = _svc.UpdateProduct(req);
+            return Ok(res);
+        }
+
+        [HttpPost("get-products-by-category-id")]
+        public IActionResult GetProductsByCategoriesID(int id)
+        {
+            var res = new SingleRsp();
+            res.Data = _svc.GetProductsByCategoriesID(id);
+            return Ok(res);
+        }
+        [HttpPost("get-product-by-id")]
+        public IActionResult GetProductByID(int id)
+        {
+            var res = new SingleRsp();
+            res.Data = _svc.GetProductByID(id);
             return Ok(res);
         }
     }

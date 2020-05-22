@@ -72,6 +72,18 @@ namespace LTCSDLBTL.BLL
             res.Data = products;
             return res;
         }
-        
+        public List<Object> GetProductsByCategoriesID(int id)
+        {
+            List<Object> res = new List<object>();
+            res = _rep.GetProductsByCategoriesID(id);
+            return res;
+        }
+        public List<Object> GetProductByID(int id)
+        {
+            List<Object> res = new List<object>();
+            res = _rep.GetProductByID(id);
+            return res;
+        }
+
     }
 }

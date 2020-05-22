@@ -40,50 +40,19 @@
       <div class="title">Xem theo chủ đề</div>
       <div class="flower-theme">
         <div class="row">
-          <div class="col-md-3">
+          
+          <div class="col-md-3" *ngFor="let item of categories">
             <a routerLink="/flower-by-theme/bohoa">
               <div class="categories-box">
                 <div class="img-categories">
-                  <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/collections/IMG_0890_125x.jpg?v=1581910008"
+                  <img src={{item.cateImg}}
                     alt="">
                 </div>
-                <p class="cate-name">Bó hoa</p>
+                <p class="cate-name">{{item.categoryName}}</p>
               </div>
             </a>
           </div>
-          <div class="col-md-3">
-            <a routerLink="/flower-by-theme/giohoa-hophoa">
-              <div class="categories-box">
-                <div class="img-categories">
-                  <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/collections/pok_125x.jpg?v=1578646416"
-                    alt="">
-                </div>
-                <p class="cate-name">Giỏ Hoa & Hộp Hoa</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a routerLink="/flower-by-theme/sinhnhat">
-              <div class="categories-box">
-                <div class="img-categories">
-                  <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/collections/blooming_sweetness_125x.png?v=1578646438"
-                    alt="">
-                </div>
-                <p class="cate-name">Sinh Nhật</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a routerLink="/flower-by-theme/langmang">
-              <div class="categories-box">
-                <div class="img-categories">
-                  <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/collections/assorted-blooms-pastel-mixed-blooms-1_1024x1024_2x_39f7479b-5366-4d78-86b6-b8dc4053d838_125x.jpg?v=1582604987"
-                    alt="">
-                </div>
-                <p class="cate-name">Lãng Mạng</p>
-              </div>
-            </a>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -93,108 +62,18 @@
     <div class="title">Ngày Của Mẹ</div>
     <div class="flower-product">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" *ngFor="let item of lstNgayCuaMe">
           <div class="flower-box">
             <a routerLink="/product-detail">
               <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/LAVIEENROSE_RESIZED_900x.jpg?v=1587437903" alt="">
+                <img src={{item.productImg}} alt="img">
               </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
+              <div class="flower-name text-center">{{item.productName}}</div>
+              <div class="flower-price text-center">{{formatter.format(item.price)}}</div>
             </a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-gio-hoa-rose-land-2_360x.JPG?v=1583681164" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/LAVIEENROSE_RESIZED_900x.jpg?v=1587437903" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-gio-hoa-rose-land-2_360x.JPG?v=1583681164" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        
+        </div> 
       </div>
-
     </div>
   </div>
   <hr>
@@ -202,72 +81,18 @@
     <div class="title">Phụ Nữ Việt</div>
     <div class="flower-product">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" *ngFor="let item of lstPhuNuVietNam">
           <div class="flower-box">
             <a routerLink="/product-detail">
               <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/LAVIEENROSE_RESIZED_900x.jpg?v=1587437903" alt="">
+                <img src={{item.productImg}} alt="img">
               </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
+              <div class="flower-name text-center">{{item.productName}}</div>
+              <div class="flower-price text-center">{{formatter.format(item.price)}}</div>
             </a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-gio-hoa-rose-land-2_360x.JPG?v=1583681164" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/LAVIEENROSE_RESIZED_900x.jpg?v=1587437903" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-bo-hoa-fly-me-to-the-moon-2_360x.jpg?v=1584324994" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="flower-box">
-            <a routerLink="/product-detail">
-              <div class="img-product">
-                <img src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/hoa-hong-gio-hoa-rose-land-2_360x.JPG?v=1583681164" alt="">
-              </div>
-              <div class="flower-name text-center">Bó Hoa Hồng La Vie En Rose</div>
-              <div class="flower-price text-center">319.000đ</div>
-            </a>
-          </div>
-        </div>
+      
         
       </div>
 

@@ -14,9 +14,10 @@
 }
 .img-categories img{
     transition: all .3s;
+    width: 98%;
 }
 .img-categories img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .cate-name{
     text-align: center;

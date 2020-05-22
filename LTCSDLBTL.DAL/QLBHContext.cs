@@ -51,7 +51,7 @@ namespace LTCSDLBTL.DAL.Models
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
-                entity.Property(e => e.Address).HasColumnType("ntext");
+                entity.Property(e => e.Address).HasColumnName("Address");
 
                 entity.Property(e => e.CompanyName).HasMaxLength(50);
 
@@ -66,7 +66,8 @@ namespace LTCSDLBTL.DAL.Models
             {
                 entity.HasKey(e => new { e.OrderId, e.ProductId })
                     .HasName("PK__Order De__B17439A5F72EA2FF");
-
+                entity.Property(e => e.Price).HasColumnName("Price");
+                entity.Property(e => e.Amount).HasColumnName("Amount");
                 entity.ToTable("Order Details");
 
                 entity.Property(e => e.OrderId)
@@ -119,6 +120,8 @@ namespace LTCSDLBTL.DAL.Models
                 entity.Property(e => e.ProductImg).HasMaxLength(500);
 
                 entity.Property(e => e.ProductName).HasMaxLength(100);
+
+                entity.Property(e => e.Price).HasColumnName("Price");
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Products)
