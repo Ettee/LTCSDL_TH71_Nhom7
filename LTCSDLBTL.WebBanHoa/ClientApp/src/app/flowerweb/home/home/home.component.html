@@ -41,8 +41,8 @@
       <div class="flower-theme">
         <div class="row">
           
-          <div class="col-md-3" *ngFor="let item of categories">
-            <a routerLink="/flower-by-theme/bohoa">
+          <div class="col-md-3 categories-item" *ngFor="let item of categories">
+            <a (click)="handleOnClickTheme(item.categoryId)">
               <div class="categories-box">
                 <div class="img-categories">
                   <img src={{item.cateImg}}
@@ -62,6 +62,7 @@
     <div class="title">Ngày Của Mẹ</div>
     <div class="flower-product">
       <div class="row">
+
         <div class="col-md-3" *ngFor="let item of lstNgayCuaMe">
           <div class="flower-box">
             <a routerLink="/product-detail">
@@ -73,6 +74,7 @@
             </a>
           </div>
         </div> 
+
       </div>
     </div>
   </div>
@@ -81,6 +83,7 @@
     <div class="title">Phụ Nữ Việt</div>
     <div class="flower-product">
       <div class="row">
+
         <div class="col-md-3" *ngFor="let item of lstPhuNuVietNam">
           <div class="flower-box">
             <a routerLink="/product-detail">
@@ -95,7 +98,6 @@
       
         
       </div>
-
     </div>
   </div>
 </div>

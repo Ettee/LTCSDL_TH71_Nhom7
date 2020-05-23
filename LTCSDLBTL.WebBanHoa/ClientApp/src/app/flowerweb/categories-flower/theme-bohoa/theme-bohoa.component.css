@@ -4,6 +4,9 @@
 .flower-block{
     margin: 50px 0;
 }
+.flower-block .item-product{
+    margin: 20px 0;
+}
 .title{
     font-size: 38px;
     font-weight: 300;

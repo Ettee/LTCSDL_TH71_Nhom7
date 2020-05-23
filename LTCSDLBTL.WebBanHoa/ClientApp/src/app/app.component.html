@@ -1,7 +1,7 @@
-<!-- Navbar -->
+<!-- Header bar -->
 <nav class="navbar navbar-expand-md nav-bg ">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">Flower Box</a>
+    <a class="navbar-brand" routerLink="/">Flower Box</a>
   
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -12,20 +12,22 @@
     <div class="collapse navbar-collapse center-link" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/flower-by-theme/bohoa">Bó Hoa</a>
+          <a class="nav-link home-link" (click)="handleOnClickLink(1)">Bó Hoa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/flower-by-theme/giohoa-hophoa">Giỏ Hoa & Hộp Hoa</a>
+          <a class="nav-link home-link" (click)="handleOnClickLink(2)">Giỏ Hoa & Hộp Hoa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/flower-by-theme/langmang">Lãng Mạn</a>
+          <a class="nav-link home-link" (click)="handleOnClickLink(4)">Lãng Mạn</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/flower-by-theme/sinhnhat">Sinh Nhật</a>
+          <a class="nav-link home-link" (click)="handleOnClickLink(3)">Sinh Nhật</a>
         </li>
       </ul>
     </div>
 </nav>
+<!-- Header bar -->
+
 <!-- Navbar -->
 <!-- Gio hang -->
 <!-- <div class="cart">

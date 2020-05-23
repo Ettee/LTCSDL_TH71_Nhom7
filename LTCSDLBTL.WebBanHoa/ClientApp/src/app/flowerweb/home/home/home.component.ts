@@ -1,5 +1,6 @@
 import { Component, OnInit,Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,7 +16,10 @@ export class HomeComponent implements OnInit {
     minimumFractionDigits:0
   })
   public result:any;
-  constructor(http:HttpClient,@Inject('BASE_URL') baseUrl:string) {
+  constructor(
+    http:HttpClient,
+    @Inject('BASE_URL') baseUrl:string,
+    private _router:Router) {
     //Xem theo chủ đề
     http.post('https://localhost:44323'+'/api/Categories/get-all-categories',null).subscribe(res=>{
       this.result=res;
@@ -34,8 +38,9 @@ export class HomeComponent implements OnInit {
     },err=>console.log(err))
 
   }
-  handleOnProductClick=(id)=>{
-    
+  handleOnClickTheme=(id)=>{
+    //console.log(id);
+    this._router.navigate(['/flower-by-theme/theme',id])
   }
   ngOnInit() {
   }

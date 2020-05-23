@@ -54,3 +54,6 @@
 .flower-theme{
     margin-top: 20px ;
 }
+.flower-theme .categories-item{
+    cursor: pointer;
+}

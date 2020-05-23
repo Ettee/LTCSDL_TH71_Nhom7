@@ -9,10 +9,13 @@
     color: white;
 }
 .nav-link{
-    color: white;
+    color: white !important;
     font-weight: 300;
     margin :0 20px;
     transition: all .5s;
+}
+.nav-link.home-link{
+    cursor: pointer;
 }
 .nav-link:hover{
     letter-spacing: 1px;
