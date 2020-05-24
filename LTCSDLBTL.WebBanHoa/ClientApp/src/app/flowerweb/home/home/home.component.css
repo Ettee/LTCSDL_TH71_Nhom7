@@ -41,6 +41,9 @@
 .flower-box .img-product img{
     width: 100%;
 }
+.flower-product .flower-box .product-item{
+    cursor: pointer;
+}
 .flower-box a{
     text-decoration: none;
     transition: all 0.3s;

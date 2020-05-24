@@ -80,7 +80,7 @@ namespace LTCSDLBTL.BLL
         }
         public List<Object> GetProductByID(int id)
         {
-            List<Object> res = new List<object>();
+            List<Object> res = new List<Object>();
             res = _rep.GetProductByID(id);
             return res;
         }

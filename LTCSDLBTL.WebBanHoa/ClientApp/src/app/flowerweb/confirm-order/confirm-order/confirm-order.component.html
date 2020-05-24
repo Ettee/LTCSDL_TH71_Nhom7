@@ -2,11 +2,11 @@
     <h1 class="title">Giỏ Hàng</h1>
     <hr>
     <div class="buy-product-section">
-        <div class="row">
+        <div class="row" *ngFor="let item of buyProduct ">
             <div class="col-md-5">
                 <div class="img-name-product">
-                    <img style="width: 100px;" src="https://cdn.shopify.com/s/files/1/0247/2322/6706/products/BeautifulYou_Resized_1024x1024@2x.jpg?v=1588825269" alt="">
-                    <div class="flower-name" style="cursor: pointer;">Bó Hoa Hồng Beautiful You</div>
+                    <img style="width: 100px;" src={{item.productImg}} alt="product-img">
+                    <div class="flower-name" style="cursor: pointer;">{{item.productName}}</div>
                 </div>
             </div>
             <div class="col-md-2" style="display: flex;align-items: center;">
@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-5">
                 <div class="price-section">
-                    <div class="flower-price">299.000đ</div>
+                    <div class="flower-price">{{formatter.format(item.price)}}</div>
                     <div class="remove-product">X</div>
                 </div>
             </div>

@@ -19,7 +19,6 @@ C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTC
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.runtimeconfig.dev.json
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
-C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.AssemblyInfoInputs.cache
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.AssemblyInfo.cs

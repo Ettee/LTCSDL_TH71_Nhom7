@@ -22,7 +22,7 @@ namespace LTCSDLBTL.BLL
             return res;
         }
         #endregion
-        public SingleRsp CreateOrder(OrderReq order)
+        public SingleRsp CreateOrderTest(OrderReq order)
         {
             var res = new SingleRsp();
             Orders orders = new Orders();
@@ -31,9 +31,10 @@ namespace LTCSDLBTL.BLL
             orders.CustomerId = order.CustomerId;
             orders.OrderDate = order.OrderDate;
 
-            res = _rep.CreateOrder(orders);
+            res = _rep.CreateOrderTest(orders);
             res.Data = orders;
             return res;
         }
+
     }
 }

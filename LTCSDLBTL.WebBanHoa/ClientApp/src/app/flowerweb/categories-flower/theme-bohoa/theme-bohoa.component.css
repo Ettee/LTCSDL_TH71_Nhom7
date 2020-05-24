@@ -21,3 +21,6 @@
 .flower-name,.flower-price{
     color: black;
 }
+.clickable{
+    cursor: pointer;
+}

@@ -8,7 +8,7 @@ const route:Routes=[
         loadChildren: ()=>import('../app/flowerweb/home/home.module').then(m=>m.HomeModule)
     },
     {
-        path:"product-detail",
+        path:"product-detail/:idProduct",
         loadChildren:()=>import('../app/flowerweb/detail-flower/detail-flower.module').then(m=>m.DetailFlowerModule)
     },
     {

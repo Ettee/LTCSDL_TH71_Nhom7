@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d0SYgb6ugDdVRMBqrZIBsb7+t4Ftkxy2Ymsl1sYFudC6CG0wXO4o1qiwV3k9cIQdDy08s2N7nLn3YpZ+1CHZmA==",
+  "dgSpecHash": "8Je0GFNr5P+NRNcR/IZT9mCM3dW8nGvB1rMT67AHAZJ9JWS7BNqB5r4DGID2Z7lx72PX83gB0aFNYDKZHLqW0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj",
   "expectedPackageFiles": [
@@ -91,7 +91,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }

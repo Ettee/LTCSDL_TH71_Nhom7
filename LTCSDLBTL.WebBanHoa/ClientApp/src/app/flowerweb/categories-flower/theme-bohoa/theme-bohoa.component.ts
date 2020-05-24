@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {HttpClient} from '@angular/common/http';
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-theme-bohoa',
   templateUrl: './theme-bohoa.component.html',
@@ -18,7 +19,8 @@ export class ThemeBohoaComponent implements OnInit {
   constructor(
     private _route:ActivatedRoute,
     http:HttpClient,
-    @Inject('BASE_URL') baseUrl:string) {
+    @Inject('BASE_URL') baseUrl:string,
+    private _router:Router) {
     //fetch data product from api 
    this.categoryID = +this._route.snapshot.params['id'];
     //console.log("categoryID: ",this.categoryID);
@@ -29,7 +31,10 @@ export class ThemeBohoaComponent implements OnInit {
     },err=>console.log(err))
 
   }
-
+  handleOnClickProduct=(idProduct)=>{
+    console.log("themeIDProduct: ",idProduct)
+    this._router.navigate(['/product-detail',idProduct])
+  }
   ngOnInit() {
     //console.log("product by cate :",this.productByCategory)
   }

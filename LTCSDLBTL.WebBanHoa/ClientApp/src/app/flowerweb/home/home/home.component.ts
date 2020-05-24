@@ -30,17 +30,23 @@ export class HomeComponent implements OnInit {
     http.post('https://localhost:44323' +'/api/Products/get-products-by-category-id?id=3',null).subscribe(res=>{
       this.result=res;
       this.lstNgayCuaMe=this.result.data;
+      //console.log("lstNgayCuaMe: ",this.lstNgayCuaMe)
     },err=>console.log(err))
     //Phu Nu Viet Nam
     http.post('https://localhost:44323' +'/api/Products/get-products-by-category-id?id=4',null).subscribe(res=>{
       this.result=res;
       this.lstPhuNuVietNam=this.result.data;
+      //console.log("lstPhuNuVietNam: ",this.lstPhuNuVietNam)
     },err=>console.log(err))
 
   }
   handleOnClickTheme=(id)=>{
     //console.log(id);
     this._router.navigate(['/flower-by-theme/theme',id])
+  }
+  handleClickProduct=(idProduct)=>{
+    console.log(idProduct)
+    this._router.navigate(['/product-detail',idProduct])
   }
   ngOnInit() {
   }

@@ -9,7 +9,7 @@
 
             <div class="col-md-3 item-product " *ngFor="let item of productByCategory">
                 <div class="flower-box">
-                  <a routerLink="/product-detail">
+                  <a (click)="handleOnClickProduct(item.productID)" class="clickable">
                     <div class="img-product">
                       <img src={{item.productImg}} alt="img">
                     </div>
