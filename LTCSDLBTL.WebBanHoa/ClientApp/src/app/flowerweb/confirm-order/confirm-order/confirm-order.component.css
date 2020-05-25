@@ -60,3 +60,7 @@
     border: none;
     letter-spacing: 1px;
 }
+.error-box{
+    color: red;
+    margin: 10px 0 ;
+}

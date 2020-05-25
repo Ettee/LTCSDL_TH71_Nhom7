@@ -51,9 +51,8 @@ namespace LTCSDLBTL.DAL
             }
             return res;
         }
-        public List<Object> CreateOrder(string CompanyName, string email, string phone, string address, int productID, DateTime orderDate, int amount)
+        public bool CreateOrder(string CompanyName, string email, string phone, string address, int productID, DateTime orderDate, int amount)
         {
-            List<Object> res = new List<Object>();
             var cnn = (SqlConnection)Context.Database.GetDbConnection();
             if (cnn.State == ConnectionState.Closed)
             {
@@ -67,36 +66,34 @@ namespace LTCSDLBTL.DAL
                 cmd.CommandText = "CreateOrder";
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@productID", productID);
                 cmd.Parameters.AddWithValue("@CompanyName", CompanyName);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@phone", phone);
                 cmd.Parameters.AddWithValue("@address", address);
+                cmd.Parameters.AddWithValue("@productId", productID);
                 cmd.Parameters.AddWithValue("@orderDate", orderDate);
                 cmd.Parameters.AddWithValue("@Amount", amount);
-
-
                 da.SelectCommand = cmd;
                 da.Fill(ds);
-                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
-                {
-                    foreach (DataRow row in ds.Tables[0].Rows)
-                    {
-                        var x = new
-                        {
-                            ProductID = row["ProductID"],
 
-                        };
-                        res.Add(x);
-                    }
-                }
+                //if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                //{
+                //    foreach (DataRow row in ds.Tables[0].Rows)
+                //    {
+                //        var x = new
+                //        {
+                //            ProductID = row["ProductID"],
 
+                //        };
+                //        res.Add(x);
+                //    }
+                //}
             }
             catch (Exception ex)
             {
-                res = null;
+                return false;
             }
-            return res;
+            return true ;
         }
     }
 }

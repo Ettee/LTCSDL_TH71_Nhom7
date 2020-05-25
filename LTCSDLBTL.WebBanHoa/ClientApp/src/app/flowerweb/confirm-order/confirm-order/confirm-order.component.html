@@ -11,7 +11,7 @@
             </div>
             <div class="col-md-2" style="display: flex;align-items: center;">
                 <div class="form-group">
-                    <input type="text" class="form-control text-center">
+                    <input type="text" class="form-control text-center" [(ngModel)]="amount" >
                 </div>
             </div>
             <div class="col-md-5">
@@ -26,20 +26,33 @@
     <hr>
     <div class="buyer-info">
         <h1 class="title">Thông tin đặt hàng</h1>
-        <form class="form-group">
+        <form class="form-group" [formGroup]="infoForm" (submit)="handleSubmit()" >
             <div class="row">
                 <div class="col-md-6">
                     <div class="input-item">
                         <label for="">Họ và Tên</label>
-                        <input formControlName="hoTen" type="text" class="form-control"  >
+                        <input formControlName="hoTen" type="text" class="form-control">
+                        <div class="error-box"
+                            *ngIf="infoForm.get('hoTen').errors?.required && 
+                                infoForm.get('hoTen').touched"
+                        >*Chưa nhập họ tên</div>
+
                     </div>
                     <div class="input-item">
                         <label for="">Địa chỉ</label>
                         <input formControlName="diaChi" type="text" class="form-control"  >
+                        <div class="error-box"
+                        *ngIf="infoForm.get('diaChi').errors?.required && 
+                            infoForm.get('diaChi').touched"
+                    >*Chưa nhập địa chỉ</div>
                     </div>
                     <div class="input-item">
                         <label for="">Số điện thoại</label>
-                        <input formControlName="soDt" type="text" class="form-control"  >
+                        <input formControlName="soDT" type="text" class="form-control"  >
+                        <div class="error-box"
+                        *ngIf="infoForm.get('soDT').errors?.required && 
+                            infoForm.get('soDT').touched"
+                    >*Chưa nhập số điện thoại</div>
                     </div>
                     
                 </div>
@@ -47,13 +60,22 @@
                     <div class="input-item">
                         <label for="">Email</label>
                         <input formControlName="email" type="email" class="form-control"  >
+                        <div class="error-box"
+                        *ngIf="infoForm.get('email').errors?.required && 
+                            infoForm.get('email').touched"
+                        >*Chưa nhập email</div>
+
+                        <div class="error-box"
+                        *ngIf="infoForm.get('email').errors && 
+                            infoForm.get('email').touched"
+                        >*Email không đúng định dạng</div>
                     </div>
                     <div class="input-item giaoNhanhChoice">  
                         <input type="checkbox" >
                         <label for="">Giao hàng nhanh trong 30 phút (Chỉ áp dụng với nội thành TPHCM)</label>
                     </div>
                     <div class="btn-order">
-                        <button (click)="datHangThanhCong(e)" routerLink="">Đặt hàng</button>
+                        <button type="submit">Đặt hàng</button>
                     </div>
                 </div>
             </div>

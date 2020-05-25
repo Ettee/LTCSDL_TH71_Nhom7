@@ -35,6 +35,12 @@ namespace LTCSDLBTL.BLL
             res.Data = orders;
             return res;
         }
+        public bool CreateOrder(CreateOrderReq order)
+        {
+            bool res =  _rep.CreateOrder(order.CompanyName, order.email, order.phone, order.address, order.productID, order.orderDate, order.amount);
+            return res;
+        }
+
 
     }
 }

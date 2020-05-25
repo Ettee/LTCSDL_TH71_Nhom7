@@ -32,5 +32,11 @@ namespace LTCSDLBTL.WebBanHoa.Controllers
             var res = _svc.CreateOrderTest(req);
             return Ok(res);
         }
+        [HttpPost("create-order")]
+        public IActionResult CreateOrder([FromBody]CreateOrderReq req)
+        {
+            var res = _svc.CreateOrder(req);
+            return Ok(res);
+        }
     }
 }
