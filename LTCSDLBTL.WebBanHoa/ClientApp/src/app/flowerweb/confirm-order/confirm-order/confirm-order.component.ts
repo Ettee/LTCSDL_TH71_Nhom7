@@ -13,7 +13,7 @@ export class ConfirmOrderComponent implements OnInit {
   public result:any;
   public buyProduct:[];
   orderDate:string;
-  amount:number=1;
+  amount:any=1;
   public formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'VND',
@@ -50,26 +50,28 @@ export class ConfirmOrderComponent implements OnInit {
       return
     }
     let time= new Date();
-    this.orderDate=`${time.getFullYear()}-${time.getMonth()+1}-${time.getDate()}`;
+    //this.orderDate=`${time.getFullYear()}-${time.getMonth()+1}-${time.getDate()}`;
     
     const thongTinDatHang={
       productID:this.productID,
       companyName:this.infoForm.get("hoTen").value,
       email:this.infoForm.get("email").value,
       address:this.infoForm.get("diaChi").value,
-      amount:this.amount,
+      amount: parseInt(this.amount),
       phone:this.infoForm.get("soDT").value,
-      orderDate:this.orderDate
+      orderDate:time
     };
     
     console.log(thongTinDatHang);
-    this.http.post("https://localhost:44323/api/Order/create-order",
-    thongTinDatHang)
-    .subscribe(
-      res=>{
-      console.log("good: ",res)
-      },
-      err=>{
+    console.log("time: ",time)
+     this.http.post("https://localhost:44323/api/Order/create-order",
+     thongTinDatHang)
+     .subscribe(
+       res=>{
+       console.log("good: ",res)
+       
+       },
+       err=>{
         console.log("bad: ",err)
       }
     );
