@@ -1,5 +1,5 @@
 <!-- Header bar -->
-<nav class="navbar navbar-expand-md nav-bg ">
+<nav class="navbar navbar-expand-md nav-bg " *ngIf="!_isAdmin">
     <!-- Brand -->
     <a class="navbar-brand" routerLink="/">Flower Box</a>
   
@@ -40,7 +40,7 @@
 <router-outlet></router-outlet>
 
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small blue pt-4" *ngIf="!_isAdmin">
 
   <!-- Footer Links -->
   <div class="container">

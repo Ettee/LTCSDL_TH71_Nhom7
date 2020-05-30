@@ -63,5 +63,6 @@ namespace LTCSDLBTL.WebBanHoa.Controllers
             res.Data = _svc.GetProductByID(id);
             return Ok(res);
         }
+
     }
 }

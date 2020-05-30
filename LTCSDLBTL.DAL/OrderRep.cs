@@ -75,19 +75,6 @@ namespace LTCSDLBTL.DAL
                 cmd.Parameters.AddWithValue("@Amount", amount);
                 da.SelectCommand = cmd;
                 da.Fill(ds);
-
-                //if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
-                //{
-                //    foreach (DataRow row in ds.Tables[0].Rows)
-                //    {
-                //        var x = new
-                //        {
-                //            ProductID = row["ProductID"],
-
-                //        };
-                //        res.Add(x);
-                //    }
-                //}
             }
             catch (Exception ex)
             {

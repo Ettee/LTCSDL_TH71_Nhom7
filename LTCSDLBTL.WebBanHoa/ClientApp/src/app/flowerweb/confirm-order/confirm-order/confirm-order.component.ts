@@ -1,6 +1,7 @@
 import { Component, OnInit,Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-confirm-order',
@@ -20,7 +21,9 @@ export class ConfirmOrderComponent implements OnInit {
     minimumFractionDigits:0
   })
   constructor(private http:HttpClient,
-  @Inject('BASE_URL') baseUrl:string) {
+  @Inject('BASE_URL') baseUrl:string,
+  private _router:Router
+  ) {
     this.productID=JSON.parse(localStorage.getItem("lstCart"));
     //console.log("lstCartGet: ",this.productID)
     http.post(`https://localhost:44323`+`/api/Products/get-product-by-id?id=${this.productID}`,null).subscribe(res=>{
@@ -62,14 +65,15 @@ export class ConfirmOrderComponent implements OnInit {
       orderDate:time
     };
     
-    console.log(thongTinDatHang);
-    console.log("time: ",time)
+    // console.log(thongTinDatHang);
+    // console.log("time: ",time)
      this.http.post("https://localhost:44323/api/Order/create-order",
      thongTinDatHang)
      .subscribe(
        res=>{
-       console.log("good: ",res)
-       
+        console.log("good: ",res)
+        alert("Đặt hàng thành công !Nhấn OK để tiếp tục mua sắm")
+        this._router.navigate(['/'])
        },
        err=>{
         console.log("bad: ",err)

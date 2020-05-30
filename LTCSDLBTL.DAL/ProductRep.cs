@@ -77,7 +77,6 @@ namespace LTCSDLBTL.DAL
             }
             return res;
         }
-
         public List<Object> GetProductsByCategoriesID(int cateID)
         {
             List<Object> res = new List<object>();
@@ -159,6 +158,7 @@ namespace LTCSDLBTL.DAL
             }
             return res;
         }
+        
         #endregion
     }
 }

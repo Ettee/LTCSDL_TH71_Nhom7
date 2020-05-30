@@ -18,6 +18,10 @@ const route:Routes=[
     {
         path:"confirm-order",
         loadChildren:()=>import('../app/flowerweb/confirm-order/confirm-order.module').then(m=>m.ConfirmOrderModule)
+    },
+    {
+        path:"admin",
+        loadChildren:()=>import('../app/flowerweb/admin/admin.module').then(m=>m.AdminModule)
     }
 ];
 @NgModule({

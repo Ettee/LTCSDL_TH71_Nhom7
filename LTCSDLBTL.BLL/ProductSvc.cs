@@ -30,7 +30,7 @@ namespace LTCSDLBTL.BLL
             var offset = (page - 1) * size;
             var total = pro.Count();
             int totalPages = (total % size) == 0 ? (total / size) : (int)(total / size + 1);
-            var data = pro.OrderBy(x => x.ProductName).Skip(offset).Take(size).ToList();
+            var data = pro.OrderBy(x => x.ProductId).Skip(offset).Take(size).ToList();
 
             var res = new
             {

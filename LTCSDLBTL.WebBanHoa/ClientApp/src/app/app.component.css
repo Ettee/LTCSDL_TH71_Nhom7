@@ -70,3 +70,6 @@ footer{
     /* right: 10px; */
 
 }
+.hide{
+    display: none;
+}
