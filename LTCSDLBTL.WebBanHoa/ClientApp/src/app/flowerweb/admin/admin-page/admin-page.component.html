@@ -1,43 +1,40 @@
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">Danh sách sản phẩm</a>
+      <a class="nav-link active" data-toggle="tab" href="#productLst">Danh sách sản phẩm</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu1">Danh sách Order</a>
+      <a class="nav-link" data-toggle="tab" href="#orderLst" (click)="getOrderList(1)" >Danh sách Order</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu2">Danh sách khách hàng</a>
+        <a class="nav-link" data-toggle="tab" href="#addProduct" (click)="getCategories()" >Thêm sản phẩm</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#menu3">Thêm sản phẩm</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#menu4">Thêm categories</a>
+        <a class="nav-link" data-toggle="tab" href="#addCate">Thêm ngành hàng</a>
     </li>
   </ul>
   
   <!-- Tab panes -->
   <div class="tab-content ">
-    <div class="tab-pane container active" id="home">
+    <div class="tab-pane container active" id="productLst">
         <div class="container-fluid">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Ngành hàng</th>
-                        <th>Giá</th>
-                        <th>Hình ảnh</th>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">Tên sản phẩm</th>
+                        <th class="text-center">Mã ngành hàng</th>
+                        <th class="text-center">Giá</th>
+                        <th class="text-center">Hình ảnh</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let item of products.data;index as i;">
-                        <td>{{item.productId}}</td>
-                        <td>{{item.productName}}</td>
-                        <td>{{item.categoryId}}</td>
-                        <td>{{item.price}}</td>
-                        <td>
+                        <td class="text-center">{{item?.productId}}</td>
+                        <td class="text-center">{{item?.productName}}</td>
+                        <td class="text-center">{{item?.categoryId}}</td>
+                        <td class="text-center">{{item?.price}}</td>
+                        <td class="text-center">
                             <img src={{item.productImg}} alt="" srcset="" style="width: 100px;">
                         </td>
                         <td>
@@ -58,65 +55,48 @@
               </ul>
         </div>
     </div>
-
-
-    <div class="tab-pane container fade" id="menu1">
+    <div class="tab-pane container fade" id="orderLst">
         <div class="container-fluid">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Tên khách hàng</th>
-                        <th>Tên sản phẩm mua</th>
-                        <th>Số lượng</th>
-                        <th>Tổng tiền</th>
+                        <th class="text-center">Mã Đơn Hàng</th>
+                        <th class="text-center">Tên khách hàng</th>
+                        <th class="text-center">Tên sản phẩm mua</th>
+                        <th class="text-center">Số lượng</th>
+                        <th class="text-center">Tổng tiền</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>Sinh nhật</td>
-                        <td>2</td>
-                        <td>300.000đ</td>
+                    <tr *ngFor="let item of lstOrder">
+                        <td class="text-center">{{item?.orderID}}</td>
+                        <td class="text-center">{{item?.companyName}}</td>
+                        <td class="text-center">{{item?.productName}}</td>
+                        <td class="text-center">{{item?.amount}}</td>
+                        <td class="text-center">{{item?.price}}</td>
+                        <td>
+                            <button class="btn btn-success" data-toggle="modal" data-target="#modalOrderDetail" (click)="openMoDalOrderDetail(item?.orderID)">Chi Tiết Đơn Hàng</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a href="javascript:void(0)" (click) = "preOrderLst()">Trước</a>
+                </li>
+                <li class="page-item mx-4" >{{page}}</li>
+                <li class="page-item">
+                    <a href="javascript:void(0)" (click) = "nextOrderLst()">Sau</a>
+                </li>
+              </ul>
         </div>
     </div>
-    <div class="tab-pane container fade" id="menu2">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Tên Khách Hàng</th>
-                    <th>Số Điện Thoại</th>
-                    <th>Email</th>
-                    <th>Địa Chỉ</th>
-                    <th>ID Đơn Hàng</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ID</td>
-                    <td>Tên Khách Hàng</td>
-                    <td>Số Điện Thoại</td>
-                    <td>Email</td>
-                    <td>Địa Chỉ</td>
-                    <td>ID Đơn Hàng</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="tab-pane container fade" id="menu3">
+    <div class="tab-pane container fade" id="addProduct">
         <div class="container-fluid my-5" style="padding: 10px; border-radius: 5px; border: 1px solid black;">
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-img" style="height: 300px; border: 1px solid black;padding: 7px;border-radius: 5px;">
-                        <img src="../../../../assets/unnamed.png" alt="" srcset="" style="width: 100%;">
-                    </div>
-                    <div style="display: flex;justify-content: center;" class="my-1">
-                        <button class="btn btn-success">Kiểm tra hình ảnh</button>
+                        <img src="{{newProduct.productImg}}"  alt=""  style="width: 100%;">
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -127,31 +107,28 @@
                                 <div class="col-md-6">
                                     <div class="input-item my-2">
                                         <label for="productName">Tên sản phẩm</label>
-                                        <input type="text" class="form-control" name="productName">
+                                        <input type="text" class="form-control" name="ProductName" [(ngModel)]="newProduct.productName">
                                     </div>
                                     <div class="input-item my-2">
                                         <label for="price">Giá</label>
-                                        <input type="text" class="form-control" style="width: 50%;" name="price">
+                                        <input type="text" class="form-control" style="width: 50%;" name="Price" [(ngModel)]="newProduct.price" >
                                     </div>
                                     
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-item my-2">
                                         <label for="sel1">Ngành hàng</label>
-                                        <select class="form-control" id="sel1">
-                                            <option>Bó Hoa</option>
-                                            <option>Giỏ Hoa & Hộp Hoa</option>
-                                            <option>Sinh Nhật</option>
-                                            <option>Lãng Mạng</option>
+                                        <select class="form-control custom-select" name="categoryId" [(ngModel)]="newProduct.categoryId" >
+                                            <option [value]="cate.categoryId" *ngFor="let cate of lstCate?.data">{{cate.categoryName}}</option>
                                         </select>
                                     </div>
                                     <div class="input-item my-2">
-                                        <label for="productImg">Link Hình Ảnh</label>
-                                        <input type="text" class="form-control"  name="productImg">
+                                        <label for="productImg">Link hình ảnh</label>
+                                        <input type="text" class="form-control"  name="productImg" [(ngModel)]="newProduct.productImg">
                                     </div>
                                     <div style="display: flex;
                                     justify-content: end;">
-                                        <button class="btn btn-success">Thêm sản phẩm</button>
+                                        <button class="btn btn-success" (click)="addProduct()" >Thêm sản phẩm</button>
                                     </div>       
                                 </div>                      
                             </div>
@@ -162,7 +139,7 @@
             
         </div>
     </div>
-    <div class="tab-pane container fade" id="menu4">
+    <div class="tab-pane container fade" id="addCate">
         <div class="container-fluid my-5" style="padding: 10px; border-radius: 5px; border: 1px solid black;">
             <div class="row">
                 <div class="col-md-3">
@@ -256,4 +233,66 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
+<div class="modal fade" id="modalOrderDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Chi Tiết Đơn Hàng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-2">Mã Đơn Hàng</div>
+                    <div class="col-3">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.orderID" />
+                    </div>
+                    <div class="col-2">Tên Khách Hàng</div>
+                    <div class="col-5">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.companyName" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-2">Sản Phẩm</div>
+                    <div class="col-4">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.productName" />
+                    </div>
+                    <div class="col-2">Số Lượng</div>
+                    <div class="col-4">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.amount" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-2">Tổng Tiền</div>
+                    <div class="col-4">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.price" />
+                    </div>
+                    <div class="col-2">email</div>
+                    <div class="col-4">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.email" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-2">Số điện thoại</div>
+                    <div class="col-3">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.phone" />
+                    </div>
+                    <br />
+                    <div class="col-1">Địa chỉ</div>
+                    <div class="col-6">
+                        <input type="text" [disabled]="true" class="form-control" [(ngModel)]="orderDetail.address" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

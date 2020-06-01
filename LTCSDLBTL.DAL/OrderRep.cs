@@ -82,5 +82,47 @@ namespace LTCSDLBTL.DAL
             }
             return true ;
         }
+        public List<Object>fetchOrderForAdmin(int page,int size)
+        {
+            var res = new List<Object>();
+            var cnn = (SqlConnection)Context.Database.GetDbConnection();
+            if (cnn.State == ConnectionState.Closed)
+            {
+                cnn.Open();
+            }
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "getOrderForAdmin";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@page", page);
+                cmd.Parameters.AddWithValue("@size", size);
+                da.SelectCommand = cmd;
+                da.Fill(ds);
+                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    foreach (DataRow row in ds.Tables[0].Rows)
+                    {
+                        var x = new
+                        {
+                            OrderID = row["OrderID"],
+                            CompanyName = row["CompanyName"],
+                            ProductName = row["ProductName"],
+                            Amount = row["Amount"],
+                            Price = row["Price"]
+                        };
+                        res.Add(x);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                res = null;
+            }
+            return res;
+        }
     }
 }

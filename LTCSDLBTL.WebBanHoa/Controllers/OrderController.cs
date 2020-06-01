@@ -38,5 +38,11 @@ namespace LTCSDLBTL.WebBanHoa.Controllers
             var res = _svc.CreateOrder(req);
             return Ok(res);
         }
+        [HttpPost("fetch-order-for-admin")]
+        public IActionResult FetchOrderForAdmin(int page,int size)
+        {
+            var res = _svc.FetchOrderForAdmin(page,size);
+            return Ok(res);
+        }
     }
 }

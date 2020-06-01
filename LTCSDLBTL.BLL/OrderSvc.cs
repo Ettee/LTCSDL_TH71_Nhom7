@@ -40,6 +40,12 @@ namespace LTCSDLBTL.BLL
             bool res =  _rep.CreateOrder(order.CompanyName, order.email, order.phone, order.address, order.productID, order.orderDate, order.amount);
             return res;
         }
+        public List<Object> FetchOrderForAdmin(int page,int size)
+        {
+            List<Object> res = new List<Object>();
+            res = _rep.fetchOrderForAdmin(page,size);
+            return res;
+        }
 
 
     }

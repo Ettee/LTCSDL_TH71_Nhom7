@@ -1,6 +1,7 @@
 import { Component, OnInit,Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Router} from '@angular/router';
+import { url } from 'inspector';
 declare var $: any 
 @Component({
   selector: 'app-admin-page',
@@ -16,7 +17,6 @@ export class AdminPageComponent implements OnInit {
     totalPages: 0,
     totalRecord: 0,
   };
-  
   product ={
     productId: 0,
     categoryId: 0,
@@ -24,6 +24,26 @@ export class AdminPageComponent implements OnInit {
     price:"0",
     productImg:""
   };
+  orderDetail={
+    orderID:0,
+    companyName:"",
+    productName:"",
+    amount:0,
+    price:0,
+    address:"",
+    email:"",
+    phone:""
+  };
+  newProduct={
+    productId:0,
+    categoryId:"",
+    productName:"",
+    price:"",
+    productImg:""
+  }
+  lstOrder:any;
+  page:number=1;
+  lstCate:any;
   constructor(
     private http:HttpClient,
     @Inject('BASE_URL') baseUrl:string,
@@ -41,7 +61,7 @@ export class AdminPageComponent implements OnInit {
       if(res.success)
       {
         this.products = res.data;
-        console.log(this.products)
+        //console.log(this.products)
       }
       else {
         alert(res.message);
@@ -93,6 +113,26 @@ export class AdminPageComponent implements OnInit {
       alert("Bạn đang ở trang đầu");
     }
   }
+  openMoDalOrderDetail(orderID){
+    let result:any;
+    this.http.post(`https://localhost:44323/api/OrderDetail/get-order-detail-with-cust-info?orderID=${orderID}`,null).subscribe(res=>{
+      result=res;
+      this.orderDetail = {
+        orderID: result.orderID,
+        companyName: result.companyName,
+        productName: result.productName,
+        amount: result.amount,
+        price: result.price,
+        address:result.address,
+        email: result.email,
+        phone: result.phone,
+      };
+      console.log(this.orderDetail)
+    },err=>{
+      console.log(err)
+    })
+    
+  } 
   openModal(index)
   {
     var item = this.products.data[index];
@@ -131,6 +171,58 @@ export class AdminPageComponent implements OnInit {
       console.log(x)
       alert(error);
     });
+  }
+  getOrderList(page){
+    this.http.post(`https://localhost:44323/api/Order/fetch-order-for-admin?page=${page}&size=5`,null).subscribe(res=>{
+      this.lstOrder=res;
+      //console.log(this.lstOrder)
+    })
+  }
+  nextOrderLst(){
+    this.page+=1;
+    this.getOrderList(this.page);
+    console.log(this.lstOrder)
+    if(this.lstOrder.length===0){
+      alert("Bạn đang ở trang cuối.")
+      this.page-=1;
+      this.getOrderList(this.page);
+    }
+  }
+  preOrderLst(){
+    this.page-=1;
+    if(this.page<1){
+      alert("Bạn đang ở trang đầu.")
+      this.page+=1;
+    }else{
+      this.getOrderList(this.page);
+    }
+  }
+  addProduct=()=>{
+    let product={
+      productId:this.newProduct.productId,
+      categoryId:parseInt(this.newProduct.categoryId),
+      productName:this.newProduct.productName,
+      price:parseInt(this.newProduct.price),
+      productImg:this.newProduct.productImg
+    };
+    this.http.post("https://localhost:44323/"+"api/Products/create-product",product).subscribe(
+      ()=>{
+        alert("Thêm sản phẩm thành công.")
+      },()=>{
+        console.log(product)
+        alert("Đã xảy ra lỗi khi thêm sản phẩm.Thử lại sau.")
+      }
+    )
+    
+  }
+  getCategories=()=>{
+    this.http.post("https://localhost:44323/api/Categories/get-all-categories",null).subscribe(res=>{
+      this.lstCate=res;
+      //console.log(this.lstCate)
+    },
+    (err)=>{
+      console.log(err)
+    })
   }
   ngOnInit() {
   }
