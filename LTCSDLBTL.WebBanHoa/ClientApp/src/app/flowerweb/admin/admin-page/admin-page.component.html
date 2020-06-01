@@ -144,11 +144,9 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-img" style="height: 300px; border: 1px solid black;padding: 7px;border-radius: 5px;">
-                        <img src="../../../../assets/unnamed.png" alt="" srcset="" style="width: 100%;">
+                        <img src="{{newCategory?.cateImg}}" alt="" srcset="" style="width: 100%;">
                     </div>
-                    <div style="display: flex;justify-content: center;" class="my-1">
-                        <button class="btn btn-success">Kiểm tra hình ảnh</button>
-                    </div>
+                    
                 </div>
                 <div class="col-md-9">
                     <h3 class="text-center  text-uppercase">Thêm Ngành Hàng</h3>
@@ -157,20 +155,20 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="input-item my-2">
-                                        <label for="productName">Tên Ngành Hàng </label>
-                                        <input type="text" class="form-control" name="productName">
+                                        <label for="categoryName">Tên Ngành Hàng </label>
+                                        <input type="text" class="form-control" name="categoryName" [(ngModel)]="newCategory.categoryName" >
                                     </div>
                                     
                                 </div>
                                 <div class="col-md-6">
                                    
                                     <div class="input-item my-2">
-                                        <label for="productImg">Link Hình Ảnh</label>
-                                        <input type="text" class="form-control"  name="productImg">
+                                        <label for="cateImg">Link Hình Ảnh</label>
+                                        <input type="text" class="form-control"  name="cateImg" [(ngModel)]="newCategory.cateImg" >
                                     </div>
                                     <div style="display: flex;
                                     justify-content: end;">
-                                        <button class="btn btn-success">Thêm Ngành Hàng</button>
+                                        <button class="btn btn-success" (click)="handleOnClickAddCateTab()" >Thêm Ngành Hàng</button>
                                     </div>       
                                 </div>                      
                             </div>

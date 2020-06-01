@@ -1,8 +1,5 @@
 <div class="container" [ngSwitch]="categoryID">
-    <h1 class="title text-center" *ngSwitchCase="1">Bó Hoa</h1>
-    <h1 class="title text-center" *ngSwitchCase="2">Giỏ Hoa & Hộp Hoa</h1>
-    <h1 class="title text-center" *ngSwitchCase="3">Sinh Nhật</h1>
-    <h1 class="title text-center" *ngSwitchCase="4">Lãng Mạng</h1>
+    <h1 class="title text-center">{{categoryName}}</h1>
     <hr>
     <div class="flower-block">
         <div class="row">

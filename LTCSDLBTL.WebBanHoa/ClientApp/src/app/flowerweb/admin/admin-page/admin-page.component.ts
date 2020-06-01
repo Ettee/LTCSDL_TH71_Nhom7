@@ -1,7 +1,6 @@
 import { Component, OnInit,Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Router} from '@angular/router';
-import { url } from 'inspector';
 declare var $: any 
 @Component({
   selector: 'app-admin-page',
@@ -40,6 +39,10 @@ export class AdminPageComponent implements OnInit {
     productName:"",
     price:"",
     productImg:""
+  }
+  newCategory={
+    categoryName:"",
+    cateImg:""
   }
   lstOrder:any;
   page:number=1;
@@ -224,6 +227,23 @@ export class AdminPageComponent implements OnInit {
       console.log(err)
     })
   }
+  handleOnClickAddCateTab=()=>{
+    let cate:any;
+    cate={
+      categoryName:this.newCategory.categoryName,
+      cateImg:this.newCategory.cateImg
+    }
+    
+    this.http.post("https://localhost:44323/api/Categories/create-categories",cate).subscribe(()=>{
+      alert("Thêm ngành hàng thành công");
+      //console.log(cate);
+    },(err)=>{
+      alert("Thêm ngành hàng thất bại.Hãy thử lại sau.");
+      console.log(err);
+      console.log(cate);
+    })
+  }
+
   ngOnInit() {
   }
 

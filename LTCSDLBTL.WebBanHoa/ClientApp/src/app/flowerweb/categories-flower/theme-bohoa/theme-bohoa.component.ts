@@ -11,6 +11,7 @@ export class ThemeBohoaComponent implements OnInit {
   public productByCategory:[];
   public result:any;
   public categoryID: number;
+  public categoryName:"";
   public formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'VND',
@@ -29,6 +30,11 @@ export class ThemeBohoaComponent implements OnInit {
       this.productByCategory=this.result.data;
       //console.log("product by cate :",this.productByCategory)
     },err=>console.log(err))
+    http.post("https://localhost:44323"+"/api/Categories/get-all-categories",null).subscribe(res=>{
+      let name:any=res;
+      name.data.map((item)=>{item.categoryId===this.categoryID?this.categoryName=item.categoryName:""})
+      console.log("name: ",this.categoryName)
+    })
 
   }
   handleOnClickProduct=(idProduct)=>{
