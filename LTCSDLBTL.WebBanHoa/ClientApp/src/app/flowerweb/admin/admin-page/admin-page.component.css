@@ -4,3 +4,9 @@
 .pagination{
     justify-content: flex-end;
 }
+.search-bar .form-inline{
+    justify-content: flex-end;
+}
+.search-bar .form-inline input{
+    width: 40%;
+}

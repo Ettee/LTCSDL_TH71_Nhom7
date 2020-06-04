@@ -17,6 +17,12 @@
   <!-- Tab panes -->
   <div class="tab-content ">
     <div class="tab-pane container active" id="productLst">
+        <div class="search-bar">
+            <form class="form-inline">
+                <input class="form-control my-2 mx-1" name="keyword" type="text" placeholder="Search" #keyword >
+                <button class="btn btn-success" (click)="handleSearchProduct(keyword.value)" >Search</button>
+            </form>
+        </div>
         <div class="container-fluid">
             <table class="table">
                 <thead>
@@ -44,6 +50,9 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="text-center" *ngIf="IsNothingToShow">
+                Không có kết quả tìm kiếm
+            </div>
             <ul class="pagination">
                 <li class="page-item">
                     <a href="javascript:void(0)" (click) = "searchPrevious()">Trước</a>
@@ -95,8 +104,18 @@
         <div class="container-fluid my-5" style="padding: 10px; border-radius: 5px; border: 1px solid black;">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="product-img" style="height: 300px; border: 1px solid black;padding: 7px;border-radius: 5px;">
-                        <img src="{{newProduct.productImg}}"  alt=""  style="width: 100%;">
+                    <div class="product-img" 
+                    style="height: 300px;
+                    border: 1px solid black;
+                    padding: 7px;
+                    border-radius: 5px;
+                    background-image: url(../assets/unnamed.png);
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                    ">
+                        <img src="{{newProduct.productImg}}"  alt=""  
+                        style="width: 100%;">
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -143,7 +162,15 @@
         <div class="container-fluid my-5" style="padding: 10px; border-radius: 5px; border: 1px solid black;">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="product-img" style="height: 300px; border: 1px solid black;padding: 7px;border-radius: 5px;">
+                    <div class="product-img" 
+                    style="height: 300px;
+                    border: 1px solid black;
+                    padding: 7px;
+                    border-radius: 5px;
+                    background-image: url(../assets/unnamed.png);
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;">
                         <img src="{{newCategory?.cateImg}}" alt="" srcset="" style="width: 100%;">
                     </div>
                     

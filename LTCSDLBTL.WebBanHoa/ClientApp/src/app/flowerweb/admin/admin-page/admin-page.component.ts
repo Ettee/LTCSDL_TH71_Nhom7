@@ -9,6 +9,11 @@ declare var $: any
 })
 export class AdminPageComponent implements OnInit {
   size :number=5;
+  lstOrder:any;
+  page:number=1;
+  lstCate:any;
+  kw:"";
+  IsNothingToShow:boolean=false;
   products:any={
     data:[],
     page: 0,
@@ -44,9 +49,7 @@ export class AdminPageComponent implements OnInit {
     categoryName:"",
     cateImg:""
   }
-  lstOrder:any;
-  page:number=1;
-  lstCate:any;
+
   constructor(
     private http:HttpClient,
     @Inject('BASE_URL') baseUrl:string,
@@ -79,15 +82,22 @@ export class AdminPageComponent implements OnInit {
     if( this.products.page < this.products.totalPages)
     {
       let nextPage = this.products.page + 1;
+      let kw:String="";
+      //console.log(this.kw)
+      if(this.kw){
+        kw=this.kw;
+      }
+      //console.log("kw: ",kw)
       let x ={
         page:nextPage,
         size:5,
-        keyword:""
+        keyword:kw
       };
+      //console.log("page: ",x)
       this.http.post('https://localhost:44323' + '/api/Products/search-products', x).subscribe(result => {
         this.products = result;
         this.products = this.products.data;
-        console.log(this.products);
+        //console.log(this.products);
       }, error => console.error(error));
     }
     else
@@ -100,15 +110,20 @@ export class AdminPageComponent implements OnInit {
     if( this.products.page > 1)
     {
       let nextPage = this.products.page - 1;
+      let kw:String="";
+      if(this.kw){
+        kw=this.kw;
+      }
+      //console.log("kw: ",kw)
       let x ={
         page:nextPage,
         size:5,
-        keyword:""
+        keyword:kw
       };
       this.http.post('https://localhost:44323' + '/api/Products/search-products', x).subscribe(result => {
         this.products = result;
         this.products = this.products.data;
-        console.log(this.products);
+        //console.log(this.products);
       }, error => console.error(error));
     }
     else
@@ -130,7 +145,7 @@ export class AdminPageComponent implements OnInit {
         email: result.email,
         phone: result.phone,
       };
-      console.log(this.orderDetail)
+      //console.log(this.orderDetail)
     },err=>{
       console.log(err)
     })
@@ -184,7 +199,7 @@ export class AdminPageComponent implements OnInit {
   nextOrderLst(){
     this.page+=1;
     this.getOrderList(this.page);
-    console.log(this.lstOrder)
+    //console.log(this.lstOrder)
     if(this.lstOrder.length===0){
       alert("Bạn đang ở trang cuối.")
       this.page-=1;
@@ -243,7 +258,27 @@ export class AdminPageComponent implements OnInit {
       console.log(cate);
     })
   }
+  handleSearchProduct=(kw)=>{
+    let objSearch={
+      page:1,
+      size:5,
+      keyword:kw
+    }
+    this.kw=kw;
+    
+    this.http.post("https://localhost:44323/api/Products/search-products",objSearch).subscribe(res=>{
+      var result:any=res;
+      if(result.data.data.length<1){
+        this.IsNothingToShow=true;
+      }else{
+        this.IsNothingToShow=false;
+      }
+      
+      this.products=result.data;
 
+    },err=>{console.log(err)})
+    
+  }
   ngOnInit() {
   }
 
