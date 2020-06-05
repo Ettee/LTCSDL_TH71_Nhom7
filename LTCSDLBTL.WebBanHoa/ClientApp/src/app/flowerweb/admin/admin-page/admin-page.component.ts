@@ -23,7 +23,7 @@ export class AdminPageComponent implements OnInit {
   };
   product ={
     productId: 0,
-    categoryId: 0,
+    categoryId: "",
     productName: "",
     price:"0",
     productImg:""
@@ -55,6 +55,7 @@ export class AdminPageComponent implements OnInit {
     @Inject('BASE_URL') baseUrl:string,
     private _router:Router) {
       this.searchProduct(1);
+      this.getCategories();
     }
   searchProduct(cPage){
     let x ={
@@ -169,7 +170,7 @@ export class AdminPageComponent implements OnInit {
     var x = {
       productId: this.product.productId,
       productName: this.product.productName,
-      categoryId: this.product.categoryId,
+      categoryId: parseInt( this.product.categoryId),
       price:parseInt(this.product.price),
       productImg:this.product.productImg
     };
@@ -187,7 +188,7 @@ export class AdminPageComponent implements OnInit {
     }, error => {
       console.error(error)
       console.log(x)
-      alert(error);
+      alert("Đã xảy ra lỗi khi cập nhật sản phẩm.Thử lại sau.");
     });
   }
   getOrderList(page){
@@ -278,6 +279,14 @@ export class AdminPageComponent implements OnInit {
 
     },err=>{console.log(err)})
     
+  }
+  handleDeleteProduct=(id)=>{
+    this.http.post(`https://localhost:44323/api/Products/delete-product?id=${id}`,null).subscribe(()=>{
+      alert("Xóa sản phẩm thành công")
+    },err=>{
+      console.log(err)
+      alert("Đã xảy ra lỗi khi xóa sản phẩm.Thử lại sau.")
+    })
   }
   ngOnInit() {
   }

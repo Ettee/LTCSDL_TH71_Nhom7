@@ -84,6 +84,11 @@ namespace LTCSDLBTL.BLL
             res = _rep.GetProductByID(id);
             return res;
         }
-
+        public Boolean DeleteProduct(int id)
+        {
+            Boolean res ;
+            res = _rep.DeleteProduct(id);
+            return res;
+        }
     }
 }

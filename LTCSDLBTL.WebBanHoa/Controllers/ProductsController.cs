@@ -63,6 +63,13 @@ namespace LTCSDLBTL.WebBanHoa.Controllers
             res.Data = _svc.GetProductByID(id);
             return Ok(res);
         }
+        [HttpPost("delete-product")]
+        public IActionResult DeleteProduct(int id)
+        {
+            var res = new SingleRsp();
+            res.Data = _svc.DeleteProduct(id);
+            return Ok(res);
+        }
 
     }
 }

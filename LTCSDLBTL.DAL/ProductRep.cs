@@ -158,7 +158,35 @@ namespace LTCSDLBTL.DAL
             }
             return res;
         }
-        
+        public Boolean DeleteProduct(int productID)
+        {
+            Boolean res ;
+            var cnn = (SqlConnection)Context.Database.GetDbConnection();
+            if (cnn.State == ConnectionState.Closed)
+            {
+                cnn.Open();
+            }
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "DeleteProduct";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", productID);
+                da.SelectCommand = cmd;
+                da.Fill(ds);
+                
+
+            }
+            catch (Exception ex)
+            {
+                res = false;
+            }
+            return res=true;
+        }
+
+
         #endregion
     }
 }
