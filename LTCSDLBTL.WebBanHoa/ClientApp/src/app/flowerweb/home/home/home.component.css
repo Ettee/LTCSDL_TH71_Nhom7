@@ -50,7 +50,11 @@
     text-decoration: none;
     transition: all 0.3s;
 }
-.flower-name,.flower-price{
+.flower-name{
+    color: #f69e8d;
+    letter-spacing: .5px;
+}
+.flower-price{
     color: black;
 }
 .flower-product .row >div{

@@ -54,30 +54,33 @@ export class ConfirmOrderComponent implements OnInit {
     }
     let time= new Date();
     //this.orderDate=`${time.getFullYear()}-${time.getMonth()+1}-${time.getDate()}`;
-    
-    const thongTinDatHang={
-      productID:this.productID,
-      companyName:this.infoForm.get("hoTen").value,
-      email:this.infoForm.get("email").value,
-      address:this.infoForm.get("diaChi").value,
-      amount: parseInt(this.amount),
-      phone:this.infoForm.get("soDT").value,
-      orderDate:time
-    };
-    
-    // console.log(thongTinDatHang);
-    // console.log("time: ",time)
-     this.http.post("https://localhost:44323/api/Order/create-order",
-     thongTinDatHang)
-     .subscribe(
-       res=>{
-        console.log("good: ",res)
-        alert("Đặt hàng thành công !Nhấn OK để tiếp tục mua sắm")
-        this._router.navigate(['/'])
-       },
-       err=>{
-        console.log("bad: ",err)
-      }
-    );
+    if(this.amount<1){
+      alert("Số lượng không thể ít hơn 1.")
+    }else{
+      const thongTinDatHang={
+        productID:this.productID,
+        companyName:this.infoForm.get("hoTen").value,
+        email:this.infoForm.get("email").value,
+        address:this.infoForm.get("diaChi").value,
+        amount: parseInt(this.amount),
+        phone:this.infoForm.get("soDT").value,
+        orderDate:time
+      };
+      
+      // console.log(thongTinDatHang);
+      // console.log("time: ",time)
+       this.http.post("https://localhost:44323/api/Order/create-order",
+       thongTinDatHang)
+       .subscribe(
+         res=>{
+          console.log("good: ",res)
+          alert("Đặt hàng thành công !Nhấn OK để tiếp tục mua sắm")
+          this._router.navigate(['/'])
+         },
+         err=>{
+          console.log("bad: ",err)
+        }
+      );
+    }
   }
 }

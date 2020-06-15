@@ -2,19 +2,20 @@
     <div class="container">
         <div class="row" *ngFor="let item of lstProduct">
             <div class="col-md-4">
-                <div class="img-flower">
-                    <img src={{item.productImg}} alt="product-img">
+                <div class="img-flower ">
+                    <div class="img-magnifier-container">
+                        <img id="myimage" src={{item.productImg}} alt="product-img">
+                    </div>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="info-flower">
                     <div class="buy-section">
                         <div class="flower-name">{{item.productName}}</div>
-                        <div class="flower-price mx-4">{{formatter.format(item.price)}}</div>
+                        <div class="flower-price mx-4 my-2">{{formatter.format(item.price)}}</div>
                         <button 
                             class="btn-buy mx-4" 
                             (click)="handleAddProduct(item.productID)">
-
                             Mua 
                         </button>
                     </div>

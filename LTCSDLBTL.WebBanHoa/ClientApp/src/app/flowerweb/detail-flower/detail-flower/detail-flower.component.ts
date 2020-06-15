@@ -2,6 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {ActivatedRoute} from '@angular/router';
 import {Router} from '@angular/router';
+declare const magnify: any;
 @Component({
   selector: 'app-detail-flower',
   templateUrl: './detail-flower.component.html',
@@ -37,6 +38,8 @@ export class DetailFlowerComponent implements OnInit {
     },1000)
   } 
   ngOnInit() {
+    magnify("myimage",3);
   }
+  
 
 }

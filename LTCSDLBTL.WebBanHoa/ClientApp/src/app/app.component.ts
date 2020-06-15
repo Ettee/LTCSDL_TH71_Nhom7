@@ -24,15 +24,13 @@ export class AppComponent implements OnInit {
     })
   }
   ngOnInit(){
-    this._route.paramMap.subscribe(params=>{
-      this._id=+params.get('id');
-    })
+    
     
   }
   
   handleOnClickLink=(id)=>{
-    console.log("link clicked",this._id)
-    console.log(this._router)
+    
+    //console.log(this._router)
     this._router.navigate(['/flower-by-theme/theme',id])
     
   }
