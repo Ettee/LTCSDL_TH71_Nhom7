@@ -1,0 +1,28 @@
+<div class="wrapper-for-search">
+    <div class="search-what">
+        <p class="display-3" *ngIf="hasData">Kết quả tìm kiếm cho từ khóa <span class="kw">{{kw}}</span> :</p>
+        <p class="display-3" *ngIf="!hasData">Không có kết quả nào cho từ khóa <span class="kw">{{kw}}</span></p>
+    </div>
+    <div class="product-section">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-3" *ngFor="let item of lstProduct" >
+                    <div class="product-box ">
+                        <a (click)="handleClickProduct(item?.productId)" class="product-item">
+                            <div class="img-product">
+                                <img src={{item?.productImg}} alt="img">
+                            </div>
+                            <div class="py-3">
+                                <div class="product-name text-center">{{item?.productName}}</div>
+                                <div class="product-price text-center">{{formatter.format(item?.price)}}</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+    </div>
+</div>

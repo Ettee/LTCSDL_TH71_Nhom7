@@ -22,6 +22,10 @@ const route:Routes=[
     {
         path:"admin",
         loadChildren:()=>import('../app/flowerweb/admin/admin.module').then(m=>m.AdminModule)
+    },
+    {
+        path:"search/:kw",
+        loadChildren:()=>import('../app/flowerweb/search-page/search-page.module').then(m=>m.SearchPageModule)
     }
 ];
 @NgModule({

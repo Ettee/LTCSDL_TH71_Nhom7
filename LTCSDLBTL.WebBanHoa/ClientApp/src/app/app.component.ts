@@ -9,6 +9,7 @@ import {Location} from '@angular/common';
 })
 export class AppComponent implements OnInit {
   title = 'app';
+  public kw:string=""
   private _id:number;
   private _isAdmin :boolean=false;
   constructor(
@@ -22,6 +23,9 @@ export class AppComponent implements OnInit {
       }
       //console.log("isAdmin: ",this._isAdmin)
     })
+  }
+  handleSearchBar=()=>{
+    this._router.navigate(['/search',this.kw])
   }
   ngOnInit(){
     

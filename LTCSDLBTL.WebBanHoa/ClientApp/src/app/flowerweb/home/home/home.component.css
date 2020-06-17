@@ -42,9 +42,14 @@
 }
 .flower-box .img-product img{
     width: 100%;
+    border-radius: 15px 15px 0 0;
 }
 .flower-product .flower-box .product-item{
     cursor: pointer;
+}
+.flower-box{
+    box-shadow: 0px 0px 28px 2px rgba(240,209,236,1);
+    border-radius: 20px;
 }
 .flower-box a{
     text-decoration: none;
@@ -69,4 +74,10 @@
 }
 .flower-theme .row{
     justify-content: center;
+}
+.flower-product .row>div{
+    transition: all .3s ;
+}
+.flower-product .row>div:hover{
+    transform: scale(1.05);
 }
