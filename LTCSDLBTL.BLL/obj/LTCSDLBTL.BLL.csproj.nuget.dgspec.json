@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj": {}
+    "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj": {
+    "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj",
+        "projectUniqueName": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj",
         "projectName": "LTCSDLBTL.BLL",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.BLL\\obj\\",
+        "projectPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.BLL\\LTCSDLBTL.BLL.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj"
+              "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj": {
+                "projectPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj"
+              "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj": {
+                "projectPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj"
               }
             }
           }
@@ -73,35 +73,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj": {
+    "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj",
+        "projectUniqueName": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj",
         "projectName": "LTCSDLBTL.Common",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\obj\\",
+        "projectPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,35 +144,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj": {
+    "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj",
+        "projectUniqueName": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj",
         "projectName": "LTCSDLBTL.DAL",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.DAL\\obj\\",
+        "projectPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.DAL\\LTCSDLBTL.DAL.csproj",
+        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -191,8 +179,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj"
+              "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj": {
+                "projectPath": "D:\\Study\\Lập trình CSDL\\WebFlowerBox\\LTCSDLBTL.Common\\LTCSDLBTL.Common.csproj"
               }
             }
           }
@@ -231,18 +219,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

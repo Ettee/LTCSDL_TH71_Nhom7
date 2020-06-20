@@ -10,3 +10,7 @@
 .search-bar .form-inline input{
     width: 40%;
 }
+.img-modal-present{
+    display: flex;
+    justify-content: center;
+}

@@ -37,3 +37,20 @@ C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDL
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.genruntimeconfig.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.deps.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.runtimeconfig.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.runtimeconfig.dev.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csprojAssemblyReference.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csproj.CoreCompileInputs.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfoInputs.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.AssemblyInfo.cs
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.csproj.CopyComplete
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.BLL\obj\Debug\netcoreapp3.1\LTCSDLBTL.BLL.genruntimeconfig.cache

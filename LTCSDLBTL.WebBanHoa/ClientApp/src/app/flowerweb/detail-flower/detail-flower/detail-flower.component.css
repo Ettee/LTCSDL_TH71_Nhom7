@@ -1,8 +1,12 @@
 .detail-block{
-    margin: 100px 0;
+    padding: 100px 0;
 }
 .img-flower img{
     width: 100%;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.75);
 }
 .flower-name{
     font-weight: 300;
@@ -24,13 +28,14 @@
     color: gray;
 }
 .btn-buy{
-    background-color: #2f2b6f;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     outline: none;
     width: 135px;
     height: 45px;
     font-weight: 300;
     color: white;
     border: none;
+    border-radius: 15px;
     letter-spacing: 1px;
     transition: all .3s;
 }

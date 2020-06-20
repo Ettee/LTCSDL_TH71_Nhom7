@@ -26,3 +26,15 @@ C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTC
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.genruntimeconfig.cache
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.csprojAssemblyReference.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.deps.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.runtimeconfig.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.runtimeconfig.dev.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.csprojAssemblyReference.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.csproj.CoreCompileInputs.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.AssemblyInfoInputs.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.AssemblyInfo.cs
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.Common\obj\Debug\netcoreapp3.1\LTCSDLBTL.Common.genruntimeconfig.cache

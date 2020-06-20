@@ -33,3 +33,18 @@ C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDL
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.dll
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.pdb
 C:\Users\Admin\Desktop\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.genruntimeconfig.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.deps.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.runtimeconfig.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.runtimeconfig.dev.json
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.DAL.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\bin\Debug\netcoreapp3.1\LTCSDLBTL.Common.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.csprojAssemblyReference.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.csproj.CoreCompileInputs.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.AssemblyInfoInputs.cache
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.AssemblyInfo.cs
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.csproj.CopyComplete
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.dll
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.pdb
+D:\Study\Lập trình CSDL\WebFlowerBox\LTCSDLBTL.DAL\obj\Debug\netcoreapp3.1\LTCSDLBTL.DAL.genruntimeconfig.cache
